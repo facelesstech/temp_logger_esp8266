@@ -28,14 +28,18 @@ function colourChange() -- Handles the ws2812 led
 
   if (ledSet == 0) then -- If led flag 0 then turn ws2812 on and run these if statments
 
-    if tempDecimal >= "20" and tempDecimal <= "30" then
+    if tempDecimal >= "30.1" and tempDecimal <= "50" then
       ws2812.writergb(3, string.char(0, 0, 255):rep(1)) -- ws2812 red
       ws2812.writergb(3, string.char(255, 0, 0):rep(1)) -- ws2812 red
       ledColour = "Red"
 
-    elseif  "15" <= tempDecimal and tempDecimal <= "19.9" then
-      ws2812.writergb(3, string.char(127, 127, 0):rep(1)) -- ws2812 orange
+    elseif tempDecimal >= "20" and tempDecimal <= "30" then
+      ws2812.writergb(3, string.char(255, 0, 0)) -- ws2812 orange
       ledColour = "Orange"
+
+    elseif  "15" <= tempDecimal and tempDecimal <= "19.9" then
+      ws2812.writergb(3, string.char(127, 127, 0):rep(1)) -- ws2812 yellow
+      ledColour = "Yellow"
 
     elseif  "10" <= tempDecimal and tempDecimal <= "14.9" then
       ws2812.writergb(3, string.char(0, 127, 127):rep(1)) --ws2812 light blue 
@@ -143,5 +147,6 @@ srv:listen(80,function(conn)
 end)
 
 --tmr.alarm(0, 10000, 1, function() readTemp() end ) -- 10 seconds
+--tmr.alarm(0, 30000, 1, function() readTemp() end ) -- 30 seconds
 tmr.alarm(0, 900000, 1, function() readTemp() end ) -- 15 mins
 --tmr.alarm(0, 300000, 1, function() readTemp() end ) -- 5 mins
