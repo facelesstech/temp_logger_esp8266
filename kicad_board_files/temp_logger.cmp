@@ -1,0 +1,73 @@
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Sat 30 Jan 2016 19:07:08 GMT
+
+BeginCmp
+TimeStamp = /56A68489;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /56A68498;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /56A68470;
+Reference = SW1;
+ValeurCmp = SWITCH_INV;
+IdModule  = switch_small_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /56A68461;
+Reference = SW2;
+ValeurCmp = SW_PUSH;
+IdModule  = button_single_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /56A68443;
+Reference = U1;
+ValeurCmp = CP2102;
+IdModule  = CP2102_Custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /56A68305;
+Reference = U2;
+ValeurCmp = ESP-01;
+IdModule  = esp-01_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /56A684A7;
+Reference = U3;
+ValeurCmp = WS2812;
+IdModule  = ws2812_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /56A6898A;
+Reference = U4;
+ValeurCmp = DS18B20;
+IdModule  = ds18b20_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /56A687AE;
+Reference = U5;
+ValeurCmp = 3.3_VOLTAGE_REG;
+IdModule  = AMS1117_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /56A684C0;
+Reference = U6;
+ValeurCmp = MALE_USB_CUSTOM;
+IdModule  = male_usb_custom;
+EndCmp
+
+EndListe
